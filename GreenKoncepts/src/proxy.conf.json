@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target":"https://test.greenkoncepts.com/gktest/login?username=gkuitest&password=gkuitest ",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

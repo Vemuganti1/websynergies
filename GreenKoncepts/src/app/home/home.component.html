@@ -1,0 +1,33 @@
+<div class="container">
+<div class="flex justify-between">
+    
+    <div>
+    </div><div></div>
+          <div >{{username}} <span class="tab"><a class="nav-item" (click)="logout()">Logout</a></span> </div>
+     
+    </div>
+   <div>
+    <ng-container>
+        <h2>Welcome to Green Koncepts </h2>
+        <br>
+            <div class="container">
+              <div class="row row-margin-30">
+                <div  class="col-xs-3 col-sm-3 col-md-4 " *ngFor='let tile of items;'>
+                    
+                    <div id="rcorners"><a style="color:black;" (click)="tileClick(tile.name)">{{tile.name}}</a></div>
+              </div>
+             
+            </div> 
+            </div>
+           
+    </ng-container>
+</div>
+</div>
+
+
+ 
+
+
+
+
+  

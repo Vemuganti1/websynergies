@@ -1,0 +1,26 @@
+
+<div class="container">
+    <a href="/home" class="previous"> Back</a>
+  <h2>View Customer Details</h2>
+ <table class="table">
+    <thead>
+      <tr>
+        <th>Customer</th>
+        <th>Order Date</th>
+        <th>Order Detail</th>
+        <th>Order Amount</th>
+      </tr>
+    </thead>
+    <tbody >
+        <ng-container  *ngFor="let order of orderData">
+        <tr>
+        <td>{{order.customer.customerName}}</td>
+        <td>{{order.orderDate}}</td>
+        <td>{{order.orderDetail}}</td>
+        <td>{{order.orderAmount}}</td>
+      </tr>
+    </ng-container>
+    </tbody>
+  </table>
+</div>
+

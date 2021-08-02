@@ -8,21 +8,25 @@ import { AppComponent } from './app.component';
 import { AlertComponent } from './_components';
 import { HomeComponent } from './home';
 import { OrderDetailComponent } from './orders';
-
+import { TreeModule } from '@circlon/angular-tree-component';
+import { HierarchyComponent } from 'src/hierarchy';
 
 
 @NgModule({
     imports: [
+        TreeModule,
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
         AppRoutingModule
+        
     ],
     declarations: [
         AppComponent,
         AlertComponent,
         HomeComponent,
-        OrderDetailComponent
+        OrderDetailComponent,
+        HierarchyComponent
     
     ],
     providers: [

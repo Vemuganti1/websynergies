@@ -62,6 +62,10 @@ export class AccountService {
         console.log(JSON.stringify(this.userData))
         return this.http.get(this.url+'/getAllOrders?token='+this.userData)   
     }
+    getHierarchy()
+    {
+        return this.http.get(this.url+'/node-hierarchy?token='+this.userData)  
+    }
 
    
     

@@ -19,7 +19,7 @@ export class OrderDetailComponent {
     ngOnInit() {
         this.username =  localStorage.getItem('name')
         this.accountService.getOrderDetails().subscribe(res=>{
-            console.log("res is"+JSON.stringify(res))
+           //console.log("res is"+JSON.stringify(res))
             this.orderData=res;
             //this.customerName=res['customer']
         })
